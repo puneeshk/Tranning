@@ -1,0 +1,110 @@
+.rs-container * {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.rs-container {
+	width:100%;
+    height: 45px;
+	margin:30px 0 0 0;
+    position: relative
+}
+.rs-container .rs-bg,
+.rs-container .rs-selected {
+    background-color: #eee;
+    border: 1px solid #ededed;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    border-radius: 3px
+}
+.rs-container .rs-selected {
+    background-color: #ea2e49;
+    border: 1px solid #ea2e49;
+    transition: all .2s linear;
+    width: 0;
+}
+.rs-container.disabled .rs-selected {
+    background-color: #ccc;
+    border-color: #bbb
+}
+.rs-container .rs-pointer {
+    background-color: #fff;
+	width:15px;
+	height:15px;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+    border: 3px solid #ea2e49;
+    cursor: pointer;
+    left: -10px;
+    position: absolute;
+    top: 1px;
+    transition: all .2s linear;
+}
+.rs-container.disabled .rs-pointer {
+    border-color: #ccc;
+    cursor: default
+}
+.rs-container .rs-pointer::after {
+    left: auto;
+    right: 12px
+}
+.rs-container.sliding .rs-pointer,
+.rs-container.sliding .rs-selected {
+    transition: none
+}
+.rs-container .rs-scale {
+    left: 0;
+    position: absolute;
+    top: 5px;
+    white-space: nowrap
+}
+.rs-container .rs-scale span {
+    float: left;
+    position: relative
+}
+.rs-container.rs-noscale span::before {
+    display: none
+}
+.rs-container.rs-noscale span:first-child::before,
+.rs-container.rs-noscale span:last-child::before {
+    display: block
+}
+.rs-container .rs-scale span:last-child {
+    margin-left: -1px;
+    width: 0
+}
+.rs-container .rs-scale span ins {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration: none
+}
+.rs-container.disabled .rs-scale span ins {
+    color: #999
+}
+.rs-tooltip {
+    background: #fff;
+    color: #333;
+    font-weight: 500;
+    width: auto;
+    border-radius: 3px;
+    position: absolute;
+    transform: translate(-100%, 18px);
+    left: 7px;
+    text-align: center;
+    font-size: 13px;
+    padding: 0;
+}
+.rs-container.disabled .rs-tooltip {
+    border-color: #ccc;
+    color: #999
+}

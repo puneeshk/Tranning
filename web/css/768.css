@@ -1,0 +1,111 @@
+.header{
+	padding:25px 0;
+}
+.show-menu{
+	display: none;
+}
+.top-link{
+	display: block;
+}
+.menu{
+	background:transparent;
+	width: auto;
+	height: auto;
+	padding:30px 0;
+	position: relative;
+	z-index: 5;
+	top:0;
+	left: 0;
+}
+.menu li{
+	width: auto;
+	padding: 0;
+	display: inline-block;
+}
+.menu li a{
+	padding:7px 11px;
+}
+.option{
+	padding:23px 0;
+}
+.option li{
+	padding:0 5px;
+}
+.search-pop{
+	padding: 200px 0 0 0;
+}
+.wrapper{
+	padding:30px 0 0 0;
+}
+.best-seller li{
+	width: 25%;
+}
+.product-list li{
+	width: 33.33%;
+}
+.best-seller h2, .product-list h2{
+	color:#0f1923;
+	font-size:22px;
+	margin:0 0 20px 0;
+}
+.best-seller h2 a, .product-list h2 a{
+	font-size:13px;
+}
+.feature li{
+	width:33.33%;
+	padding-bottom: 0;
+}
+.feature li p{
+	font-size:11px;
+}
+.footer h5{
+	padding:30px 0 25px 0;
+}
+.footer p{
+	padding-bottom:15px;
+}
+.copyright{
+	font-size: 14px;
+	text-align: left;
+}
+.social{
+	padding: 0;
+	text-align: right;
+}
+.cart h2{
+	font-size: 35px;
+	padding: 50px 0;
+}
+.breadcrumb{
+	margin-bottom: 20px;
+}
+.filter-section{
+	width: 100%;
+	position: relative;
+	top:0;
+	left:0;
+}
+.product-list{
+	margin-top: 40px;
+}
+.sort-by.mob{
+	display: none;
+}
+.sort-by.desk{
+	display: block;
+}
+.select-color{
+	padding: 0 2px;
+}
+.product-image{
+	margin-bottom: 0;
+}
+.product-image{
+	margin-bottom: 20px;
+}
+.product-details h3{
+	font-size: 32px;
+}
+.product-size{
+	margin-bottom: 0;
+}
